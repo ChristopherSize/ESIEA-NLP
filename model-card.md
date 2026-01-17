@@ -82,33 +82,19 @@ Effectuer des prédictions sur notre jeu d'entrainement nous a pris 20 minutes
 
 ## Evaluation
 
-<!-- This section describes the evaluation protocols and provides the results. -->
+#### Métrique
 
-### Testing Data, Factors & Metrics
+Les métriques utilisé pour évaluer notre modèle sont: accuracy_score et f1_score
 
-#### Testing Data
+### Résultats
 
-<!-- This should link to a Dataset Card if possible. -->
+| Labels   | accuracy    | f1_score       |
+| ------ | ----- | ------- |
+| toxic | 0.9307 | 0.9333 |
+| severe_toxic | 0.9943 | 0.9914 |
+| obscene         |  0.9639 |  0.9641 |
+|  threat          |  0.9967 |  0.9951 |
+|  insult          |  0.9592 |  0.9584 |
+|  identity_hate   |  0.9889 |  0.9889 |
 
-{{ testing_data | default("[More Information Needed]", true)}}
-
-#### Factors
-
-<!-- These are the things the evaluation is disaggregating by, e.g., subpopulations or domains. -->
-
-{{ testing_factors | default("[More Information Needed]", true)}}
-
-#### Metrics
-
-<!-- These are the evaluation metrics being used, ideally with a description of why. -->
-
-{{ testing_metrics | default("[More Information Needed]", true)}}
-
-### Results
-
-{{ results | default("[More Information Needed]", true)}}
-
-#### Summary
-
-{{ results_summary | default("", true) }}
 
